@@ -1,6 +1,7 @@
 // import React, {Component} from 'react';
 import React, {useState} from 'react';
-import CityWeather from './CityWeather';
+// import CityWeather from './CityWeather';
+import CityWeatherHooks from './CityWeatherHooks';
 
 const WeatherApp = (props) => {
 // class WeatherApp extends Component {
@@ -20,7 +21,7 @@ const WeatherApp = (props) => {
   const [city, setCty] = useState('London');
   const [cityNameForWeather, setCityNameForWeather] = useState('London');
 
-  
+
   const changeCity = (event)=>{
     setCty(event.target.value)
   }
@@ -34,7 +35,7 @@ const WeatherApp = (props) => {
   return(
     <div className="container">
       {/* <CityWeather cityName={this.state.cityNameForWeather} /> */}
-      <CityWeather cityName={cityNameForWeather} />
+      <CityWeatherHooks cityName={cityNameForWeather} />
       <div className="row justify-content-center">
         {/* <form onSubmit={this.citysearch}> */}
         <form onSubmit={citysearch}>

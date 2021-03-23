@@ -7,9 +7,6 @@ const CityWeather = (props) => {
     // state = {}
     const [icon, setIcon] = useState('')
 
-    useEffect(() => {
-        getWeather()
-    }, [props.cityName])
 
     // async componentDidMount(){
     //     this.getWeather();
